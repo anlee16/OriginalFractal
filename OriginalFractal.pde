@@ -1,4 +1,4 @@
-float grow = 0.0;
+float grow = 0;
 public void setup()
 {
 size(600, 600);
@@ -9,13 +9,12 @@ strokeWeight(0.55);
 public void draw()
 {
 background(237,233,233);
-scale(grow);
 translate(300,300);
+scale(grow);
 rose(0, 0, 600);
 
 }
 public void mouseClicked(){
- if (grow <= 1)
  grow +=.05;
 }
 public void keyPressed(){
