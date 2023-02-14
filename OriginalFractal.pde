@@ -18,6 +18,10 @@ public void mouseClicked(){
  if (grow <= 1)
  grow +=.05;
 }
+public void keyPressed(){
+  if (key == 'r')
+  grow = 0;
+}
 public void rose(int x, int y, int size)
 {
 
